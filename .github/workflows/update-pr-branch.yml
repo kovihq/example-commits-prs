@@ -1,13 +1,15 @@
 name: Update Branch
-on: [pull_request]
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
 
 jobs:
   assignAuthor:
     runs-on: ubuntu-latest
-    - name: Pull Request
-      steps:
-        - uses: juliangruber/update-pull-request-branch-action@v1.0.1
-        if: github.event_name == 'pull_request' && github.event.action == 'opened'
+    steps:
+      - name: Pull Request
+        uses: juliangruber/update-pull-request-branch-action@v1.0.1
         with:
           number: 1
           github-token: ${{ secrets.GITHUB_TOKEN }}
