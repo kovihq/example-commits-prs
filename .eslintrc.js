@@ -11,11 +11,20 @@ module.exports = {
   },
 
   extends: [
+    'plugin:vue/strongly-recommended',
     'airbnb-base'
   ],
 
+  plugins: [
+    'vue'
+  ],
+
   globals: {
+    'ga': true,
+    'cordova': true,
+    '__statics': true,
     'process': true,
+    'Capacitor': true,
     'chrome': true
   },
 
