@@ -6,6 +6,7 @@
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
+  "repositoryUrl": "https://github.com/kovihq/example-commits-prs",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
@@ -22,6 +23,8 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@quasar/app": "^1.5.1",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^8.0.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.0.3",
     "commitizen": "^4.0.3",
