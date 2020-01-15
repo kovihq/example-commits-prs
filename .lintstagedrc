@@ -1,6 +1,6 @@
 {
-  "*.{js, jsx}": [
-    "npm run lint",
+  "*.{js, jsx, vue}": [
+    "npx eslint --fix",
     "git add",
   ]
 }
