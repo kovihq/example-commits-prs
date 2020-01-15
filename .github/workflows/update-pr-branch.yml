@@ -1,12 +1,13 @@
-name: Update Pull Request
+name: Update Branch
 on: [pull_request]
 
 jobs:
   assignAuthor:
     runs-on: ubuntu-latest
-    steps:
-      - uses: juliangruber/update-pull-request-branch-action@v1.0.1
-      if: github.event_name == 'pull_request' && github.event.action == 'opened'
-      with:
-        number: 1
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Pull Request
+      steps:
+        - uses: juliangruber/update-pull-request-branch-action@v1.0.1
+        if: github.event_name == 'pull_request' && github.event.action == 'opened'
+        with:
+          number: 1
+          github-token: ${{ secrets.GITHUB_TOKEN }}
