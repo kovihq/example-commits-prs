@@ -1,6 +1,6 @@
 {
   "name": "example-commits-prs",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Kovi example of PRs and Commits",
   "productName": "Example of Commits and PRs",
   "cordovaId": "org.cordova.quasar.app",
@@ -11,7 +11,8 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@quasar/extras": "^1.4.1",
@@ -48,5 +49,12 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kovihq/example-commits-prs.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
