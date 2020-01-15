@@ -1,5 +1,14 @@
+name: Update Pull Request
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+      - synchronize
+
 steps:
-  - name: Update Pull Request
+  - name: Branch
     uses: juliangruber/update-pull-request-branch-action@v1
     with:
       number: 1
