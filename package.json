@@ -1,0 +1,20 @@
+{
+  "name": "example-commits-prs",
+  "version": "0.0.1",
+  "description": "Kovi example of PRs and Commits",
+  "productName": "Example of Commits and PRs",
+  "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
