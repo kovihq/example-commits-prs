@@ -1,0 +1,6 @@
+steps:
+  - name: Update Pull Request
+    uses: juliangruber/update-pull-request-branch-action@v1
+    with:
+      number: 1
+      github-token: ${{ secrets.GITHUB_TOKEN }}
