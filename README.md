@@ -2,6 +2,8 @@
 
 This is a repository for a commit and PR's culture. In this repository there are examples on how to do commit messages, open PRs, execute code reviews, and how to do the best practices in the process of GitHub repository management.
 
+For more information about the commits templates check the [COMMIT_TEMPLATES.md](./COMMIT_TEMPLATES.md)
+
 ## Based On
 
 - [Semantic Versioning](https://semver.org/)
@@ -20,7 +22,6 @@ This is a repository for a commit and PR's culture. In this repository there are
 ### Github Workflows
 - [conventional-pr-title](https://github.com/marketplace/actions/conventionnal-pr-title)
 - [assign-pr-to-author](https://github.com/marketplace/actions/assign-pr-to-author)
--[update-pull-request-branch](https://github.com/marketplace/actions/update-pull-request-branch_
 
 ### Git Alias Helpers
 - [git-semantic-commit](https://github.com/fteem/git-semantic-commits)
