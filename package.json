@@ -24,6 +24,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@quasar/app": "^1.5.1",
+    "@quasar/quasar-app-extension-dotenv": "^1.0.0",
     "@semantic-release/changelog": "^3.0.6",
     "@semantic-release/git": "^8.0.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
