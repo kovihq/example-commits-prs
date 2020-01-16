@@ -1,46 +1,45 @@
 module.exports = {
   root: true,
 
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:vue/strongly-recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/vue'
+  ],
+
+  plugins: [
+    '@typescript-eslint',
+    'vue'
+  ],
+
   parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module'
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
+    project: './tsconfig.json'
   },
 
   env: {
     browser: true
   },
 
-  extends: [
-    'plugin:vue/strongly-recommended',
-    'airbnb-base'
-  ],
-
-  plugins: [
-    'vue'
-  ],
-
   globals: {
-    'ga': true,
-    'cordova': true,
-    '__statics': true,
-    'process': true,
-    'Capacitor': true,
-    'chrome': true
+    ga: true,
+    cordova: true,
+    __statics: true,
+    process: true
   },
 
   rules: {
-    'no-param-reassign': 'off',
-
-    'import/first': 'off',
-    'import/named': 'error',
-    'import/namespace': 'error',
-    'import/default': 'error',
-    'import/export': 'error',
-    'import/extensions': 'off',
-    'import/no-unresolved': 'off',
-    'import/no-extraneous-dependencies': 'off',
-    'import/prefer-default-export': 'off',
     'prefer-promise-reject-errors': 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    quotes: ['warn', 'single'],
+    '@typescript-eslint/indent': ['warn', 2],
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    '@typescript-eslint/explicit-function-return-type': 'off'
   }
 }
