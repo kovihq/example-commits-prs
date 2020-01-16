@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/kovihq/example-commits-prs/compare/v1.0.0...v1.1.0) (2020-01-16)
+
+
+### Bug Fixes
+
+* added package-lock.json file updated ([32e827d](https://github.com/kovihq/example-commits-prs/commit/32e827df1d01d7361ba8bc4745eef57294153af6))
+
+
+### Features
+
+* added automated tests to the repository and Quasar-Framework ([d0d7173](https://github.com/kovihq/example-commits-prs/commit/d0d71738809a26f4687d64c3cdfa0f1ad0c77a92))
+* **github:** added Dotenv plugin to Quasar-Framework ([5d9d680](https://github.com/kovihq/example-commits-prs/commit/5d9d680d39fa78f47a63fe647955963a3af5b9f6))
+* added TypeScript support for Quasar-Framework ([c68aeae](https://github.com/kovihq/example-commits-prs/commit/c68aeae3ea394147e7d18f6cda6027a25260efff))
+
 # 1.0.0 (2020-01-15)
 
 
